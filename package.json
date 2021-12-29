@@ -13,7 +13,6 @@
     "MUI",
     "material",
     "boilerplate",
-    "react-router",
     "yup",
     "formik",
     "swr"
