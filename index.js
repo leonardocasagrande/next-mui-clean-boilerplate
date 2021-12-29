@@ -32,7 +32,7 @@ prompt.get(schema, (err, result) => {
   try {
     console.log("Cloning project...")
     execSync(
-      `git clone git@github.com:leonardocasagrande/react-material-boilerplate.git ${result.projectName}`,
+      `git clone https://github.com/leonardocasagrande/next-material-boilerplate.git ${result.projectName}`,
       { cwd: process.cwd() }
     );
 
@@ -60,7 +60,7 @@ prompt.get(schema, (err, result) => {
     console.log("\n\nRun the following commands to start coding");
     console.log(`\n\ncd ${result.projectName}`);
     console.log(`\nnpm install`);
-    console.log(`\nnpm start`);
+    console.log(`\nnpm run dev`);
     console.log(`\n\nHappy coding!`);
   } catch (err) {
     console.log(`\n  ERROR CLONING PROJECT \n`);
